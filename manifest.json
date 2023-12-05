@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Steam Brasileira - Corretor de Língua",
+    "version": "1.0.0",
+    "description": "Corrige a nomenclatura colonizada da loja Steam, que utiliza o termo Português, para a versão correta, o Brasileiro.",
+    "action": {
+        "default_icon": {
+            "16": "./icons/icon16.png",
+            "38": "./icons/icon38.png",
+            "48": "./icons/icon48.png",
+            "128": "./icons/icon128.png"
+        }
+    },
+    "content_scripts": [
+        {
+          "js": ["change-language.js"],
+          "matches": ["https://store.steampowered.com/*"]
+        }
+    ]
+}
